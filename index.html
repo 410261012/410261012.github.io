@@ -12,7 +12,22 @@
     <div style="text-align:center;widht:300px;line-height:30px;border:15px black solid;">
       <font size="10">
       
-    
+ <p>
+  <a id="my-toggle-click">Toggle</a>
+</p>
+
+<div id="foo" style="border: 1px solid red;">
+  <p>bar</p>
+</div>
+
+<script>
+  $("#foo").hide();   // 先馬上藏起來
+
+  $("#my-toggle-click").hover(function(){
+    $("#foo").toggle();   // 移過去會有開關的效果
+  })
+
+</script>
         <font face="標楷體"><br>
         <font color="White"><br>
      <h1><b>Welcome to my page</h1></b><br></font>
